@@ -68,6 +68,7 @@ function resetfunc() {
   let div = document.querySelectorAll("div");
   div.forEach((curdiv) => {
     curdiv.style.backgroundColor = "white";
+    curdiv.remove();
   });
   color = "white";
 }
