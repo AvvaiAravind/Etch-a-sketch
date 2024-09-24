@@ -1,6 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: linear-gradient(to bottom, #e66465, #9198e5);
+}
+
+button {
+  font: inherit;
 }
 
 body {
@@ -14,17 +25,16 @@ header {
   justify-content: space-evenly;
   align-items: center;
   margin: 10px 10px 5px 10px;
-  padding: 5px10px;
+  padding: 5px 10px;
 }
 
-h1 {
-  text-align: center;
-}
 .board {
   margin: 0 auto;
-  max-width: 500px;
-  min-height: 80vh;
   border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
 }
 
 footer {
